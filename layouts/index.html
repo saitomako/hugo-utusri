@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+{{ partial "head" . }}
+
+<style>
+#works::after,
+#product::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+table {
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body class="stretched">
+  <div id="top"></div>
+
+  <!-- Document Wrapper
+  ============================================= -->
+  <div id="wrapper" class="clearfix">
+
+    <!-- Header
+    ============================================= -->
+    <header id="header" class="full-header transparent-header" data-sticky-class="not-dark" data-sticky-logo-height="80">
+      <div id="header-wrap">
+        <div class="container">
+          <div class="header-row">
+
+            {{ partial "logo" . }}
+
+            {{/* partial "header-misc" . */}}
+
+            {{ partial "primary-menu-trigger" . }}
+
+            <!-- Primary Navigation
+            ============================================= -->
+            <nav class="primary-menu">
+
+              <ul class="menu-container">
+                <li><a class="menu-link" href="#top" data-scrollto="#top"><div>Home</div></a></li>
+                <li><a class="menu-link" href="#about" data-scrollto="#about"><div>About</div></a></li>
+                <li><a class="menu-link" href="#works" data-scrollto="#works"><div>Works</div></a></li>
+                <li><a class="menu-link" href="#product" data-scrollto="#product"><div>Product</div></a></li>
+                <li><a class="menu-link" href="#access" data-scrollto="#access"><div>Access</div></a></li>
+                <li><a class="menu-link" href="#contact" data-scrollto="#contact"><div>Contact</div></a></li>
+              </ul>
+
+            </nav><!-- #primary-menu end -->
+
+            {{ partial "top-search-form" . }}
+
+          </div>
+        </div>
+      </div>
+      <div class="header-wrap-clone"></div>
+    </header><!-- #header end -->
+
+    <section id="slider" class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-autoplay="9000" data-loop="true">
+      <div class="slider-inner">
+
+        <div class="swiper-container swiper-parent">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide dark">
+              <div class="container">
+                <div class="slider-caption slider-caption-center">
+                  <h2 data-animate="fadeInUp">Welcome to Utsuri</h2>
+                  <!--
+                  <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">当工房UTSURIでは植物100%の染料を使用し、<br>草木染めの体験教室や商品の開発、製作、提供をしております。</p>
+                  -->
+                </div>
+              </div>
+              <div class="swiper-slide-bg" style="background-image: url('images/min/slider1.jpg');"></div>
+              <div class="swiper-slide-bg" style="background-color: rgba(0,0,0,0.4)"></div>
+            </div>
+            <div class="swiper-slide dark">
+              <div class="container">
+                <div class="slider-caption slider-caption-center">
+                  <h2 data-animate="fadeInUp">About Utsuri</h2>
+                  <p class="d-none d-sm-block text-left" data-animate="fadeInUp" data-delay="200">
+                  当工房UTSURIでは植物100%の染料を使用し、草木染めの体験教室や商品の開発、製作、提供をしております。<br>
+                  私たちは草木染めの中でも特に桜染めに力を入れてまいりました。<br>
+                  20年以上の年月をかけ、独自の染めの技法を開発し、100%桜の樹木から色を抽出して染色しております。</p>
+                </div>
+              </div>
+              <div class="swiper-slide-bg" style="background-image: url('images/min/slider2.jpg');"></div>
+              <div class="swiper-slide-bg" style="background-color: rgba(0,0,0,0.4)"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="slider-caption">
+                  <h2 data-animate="fadeInUp">桜の色<span style="font-size:2rem;color:#444;">は、</span></h2>
+                  <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">桜の種類や樹齢、その年の気候などでも微妙に変化します。それは自然からいただく命の色です。</p>
+                </div>
+              </div>
+              <div class="swiper-slide-bg" style="background-image: url('images/min/slider3.jpg'); background-position: center top;"></div>
+              <div class="swiper-slide-bg" style="background-color: rgba(255,255,255,0.5)"></div>
+            </div>
+          </div>
+          <div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+          <div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+        </div>
+
+<!--<a href="#" data-scrollto="#content" data-offset="100" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>-->
+
+      </div>
+    </section>
+
+    <!-- Content
+    ============================================= -->
+    <section id="content">
+      <div class="content-wrap">
+        
+        {{/* partial "content-welcome" . */}}
+
+        <!-- {{  partial "content-feature" . }} -->
+
+        <div class="container clearfix">
+
+          <div class="heading-block topmargin-lg center">
+            <h2>Vision</h2>
+          </div>
+
+          <!-- {{ partial "content-items-3col" . }} -->
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <p>Our ancestors lived their daily lives and enriched their culture amid the changing of the four seasons.<br>
+              They also used the changing of the four seasons to refine their dying techniques and sentiments and preferences towards color.<br>
+              They used plant dyes not just to dye thread and cloth but also as medicine. Plant dyeing, then, is a treasure trove of wisdom bequeathed to us by ancient civilization.<br>
+              At our workshop UTSURI, we use only 100% plant-based dyes in the operation of our plant-dyeing classes and the development, manufacturing, and supplying of our products.<br>
+              We'd like to offer the beautiful, rich natural colors of plants, which can't be found in chemical dyes, not just to Japan but to the wider world.</p> 
+            </div>
+            <div class="col-lg-6">
+              <p>私たち先祖は四季の移ろいの中で、日々生活し文化を豊かにしてきました。<br>
+              その中でも色彩に対する想いやこだわりが、染めの技術を磨いてきたと言えます。<br>
+              また草木染めは糸や布を染めるだけではなく、その染料は「薬」としての目的にも使われていました。古代文明から受け継がれた草木染めはたくさんの知恵の集積です。<br>
+              当工房UTSURIでは植物100%の染料を使用し、草木染めの体験教室や商品の開発、製作、提供をしております。<br><br>
+              化学染料にはない、草木の自然豊かな美しい色を日本のみならず、世界に向けて広く発信していきたいと思っております。</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- {{ partial "content-wide-2col" . }} -->
+
+        {{/* partial "content-amounts-4col" . */}}
+
+        {{/* partial "content-features" . */}}
+
+        <div id="about" class="section parallax mt-0 border-0" style="padding:80px 0;background-image:url(images/min/bg-about.jpg);background-size:cover;" data-bottom-top="background-position:0 300px;" data-top-bottom="background-position:0 -300px;">
+          <div class="container clearfix">
+            <div class="heading-block center m-0">
+              <h3>About</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="container clearfix">
+          <div class="row col-mb-50">
+            <div class="col-md-6 center">
+              <img data-animate="fadeInLeft" src="images/min/img-about.jpg" alt="image about" class="fadeInLeft animated">
+            </div>
+            <div class="col-md-6 text-md-left">
+              <p>
+                当工房UTSURIでは草木染めの中でも特に桜染めに力を入れてまいりました。<br>
+                20年以上の年月をかけ、独自の染めの技法を開発し、100%桜の樹木から色を抽出して染色しております。<br>
+                桜の色は、桜の種類や樹齢、その年の気候などでも微妙に変化します。それは自然からいただく命の色です。<br>
+                時を経るに従い、色が深まりゆく桜染め。その変化も楽しみの一つです。<br>
+                また素材は、天然繊維のシルク、ウールを使用し直接肌に触れても安心していただける物にこだわっております。
+              </p>
+              <p>
+                Among all of the plant dyes we use at our workshop UTSURI, we put particular effort into our cherry blossom dye.<br>
+                For over 20 years, we've developed this unique dyeing technique and dyed our products with color that is 100% derived from cherry trees.<br>
+                The color of cherry blossoms shifts subtly based on such factors as the type of cherry tree, the age of the tree, and even the climate of the year in which it is harvested. It is a living color bestowed by nature.<br>
+                Cherry blossom dye deepens in color as time passes. You can also look forward to that change.<br>
+                Additionally, we take care to use natural fibers such as silk and wool that can be worn directly on the skin without worry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="works" class="section parallax dark mt-0 border-0" style="padding: 80px 0; background-image:url(images/min/bg-works.jpg);background-size:cover;" data-bottom-top="background-position:0 300px;" data-top-bottom="background-position:0 -300px;">
+          <div class="container clearfix">
+            <div class="heading-block center m-0">
+              <h3>Works</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container clearfix">
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <img data-animate="fadeInLeft" src="images/min/img-work1.jpg" alt="image about" class="fadeInLeft animated">
+            </div>
+            <div class="col-md-6">
+              <p>
+                六義園はしだれ桜と大名庭園で有名な都立庭園です。<br>
+                utsuriでは毎年しだれ桜の開花イベントに合わせて、庭園にて桜染めストール等を販売しております。
+              </p>
+              <p>
+                Rikugien is a metropolitan park known for its weeping cherry trees and as a daimyo garden.<br>
+                Utsuri sells cherry blossom dyed stoles and other items in the park for the events that surround the flowering of the weeping cherry blossoms each year.
+              </p>
+            </div>
+          </div>
+          <div class="row col-mb-50 flex-md-row-reverse">
+            <div class="col-md-6">
+              <img data-animate="fadeInRight" src="images/min/img-work2.jpg" alt="image about" class="fadeInRight animated">
+            </div>
+            <div class="col-md-6">
+              <p>
+                浜離宮恩賜庭園は、潮入の池と二つの鴨場をもつ江戸時代の代表的な大名庭園です。<br>
+                utsuriでは藍染、草木染めストール等を庭園にて販売しております。
+              </p>
+              <p>
+                Hamarikyu Gardens is a representative daimyo garden from the Edo Period, which has a tidal pond and two duck-hunting grounds.<br>
+                Utsuri sells indigo dyed and plant dyed stoles and other items at the Gardens.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="product" class="section parallax dark border-0" style="padding: 80px 0; background-image:url(images/min/bg-product.jpg);background-size:cover;" data-bottom-top="background-position:0 300px;" data-top-bottom="background-position:0 -300px;">
+          <div class="container clearfix">
+            <div class="heading-block center m-0">
+              <h3>Product</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-thumbs grid-container grid-3 clearfix mb-5">
+          <div class="grid-item" href="images/min/img-product1.jpg" data-lightbox="image">
+            <div class="grid-inner">
+              <img src="images/min/img-product1.jpg" alt="product1">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark">
+                  <i class="icon-line-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+                </div>
+                <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item" href="images/min/img-product2.jpg" data-lightbox="image">
+            <div class="grid-inner">
+              <img src="images/min/img-product2.jpg" alt="product2">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark">
+                  <i class="icon-line-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+                </div>
+                <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item" href="images/min/img-product3.jpg" data-lightbox="image">
+            <div class="grid-inner">
+              <img src="images/min/img-product3.jpg" alt="product3">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark">
+                  <i class="icon-line-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+                </div>
+                <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item" href="images/min/img-product4.jpg" data-lightbox="image">
+            <div class="grid-inner">
+              <img src="images/min/img-product4.jpg" alt="product4">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark">
+                  <i class="icon-line-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+                </div>
+                <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item" href="images/min/img-product5.jpg" data-lightbox="image">
+            <div class="grid-inner">
+              <img src="images/min/img-product5.jpg" alt="product5">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark">
+                  <i class="icon-line-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+                </div>
+                <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item" href="images/min/img-product6.jpg" data-lightbox="image">
+            <div class="grid-inner">
+              <img src="images/min/img-product6.jpg" alt="product6">
+              <div class="bg-overlay">
+                <div class="bg-overlay-content dark">
+                  <i class="icon-line-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+                </div>
+                <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                当工房UTSURIでは草木の色を大切にし、独自の染色技法を用いてこだわりの商品を制作しております。<br>
+                素材は、国産シルク・ウール・リネン・コットンの天然素材だけを使用しております。<br>
+                今後は日本ならではの桜染・藍染を国内外にもさらに広め、オリジナリティのある商品開発に取り組んでいきます。
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                主な品目<br>
+                ・洋服<br>
+                ・服飾雑貨（ストール・傘・ポーチ）<br>
+                ・タペストリー
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="access" class="section">
+          <div class="container clearfix">
+            <div class="heading-block center m-0">
+              <h3>Access</h3>
+              <p>― 工房のご案内 ―</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-md-6">
+              <table>
+                <tbody>
+                  <tr>
+                    <th width="120">Workshop</th>
+                    <td>Utsuri</td>
+                  </tr>
+                  <tr>
+                    <th>Address</th>
+                    <td>Furu-Koori 83-3 Higashi-Matsuyama-shi Saitama-ken</td>
+                  </tr>
+                  <tr>
+                    <th>TEL/FAX</th>
+                    <td>0493-53-1755</td>
+                  </tr>
+                  <tr>
+                    <th>Chief</th>
+                    <td>Keiko Koike</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <table>
+                <tbody>
+                  <tr>
+                    <th width="120">屋　号</th>
+                    <td>Utsuri</td>
+                  </tr>
+                  <tr>
+                    <th>所在地</th>
+                    <td>埼玉県松山市古凍８３−３</td>
+                  </tr>
+                  <tr>
+                    <th>TEL/FAX</th>
+                    <td>0493-53-1755</td>
+                  </tr>
+                  <tr>
+                    <th>代　表</th>
+                    <td>小池　啓子</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.0856836216612!2d139.42950267913548!3d36.01820098730593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d466098ea8ef%3A0x6e31495a9ad8da0f!2z44CSMzU1LTAwMzUg5Z-8546J55yM5p2x5p2-5bGx5biC5aSn5a2X5Y-k5YeN77yY77yT4oiS77yT!5e0!3m2!1sja!2sjp!4v1598562824908!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        
+        <div id="contact" class="section">
+          <div class="container clearfix">
+            <div class="heading-block center m-0">
+              <h3>Contact</h3>
+              <p>― お問合わせ ―</p>
+              <p>いつもご利用ありがとうございます。お問い合せは下記よりお願いいたします。</p>
+            </div>
+          </div>
+        </div>
+        
+        {{/* partial "contact-form" . */}}
+        
+        <section id="contact-form">
+          <div class="container">
+            <div class="row">
+              <div class="contact-form-overlay col-md-8 offset-md-2 p-5">
+                <div class="fancy-title">
+                  <h3>お問い合せフォーム</h3>
+                </div>
+                <div class="form-widget" data-alert-type="inline">
+                  <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+                    <div class="col-md-6 form-group">
+                      <label for="template-contactform-name">お名前 <small>*</small></label>
+                      <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" placeholder="Name"/>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="template-contactform-email">メールアドレス <small>*</small></label>
+                      <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" placeholder="E-Mail" />
+                    </div>
+                    
+                    <div class="w-100"></div>
+                    
+                    <div class="col-12 form-group">
+                      <label for="template-contactform-subject">タイトル <small>*</small></label>
+                      <input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" placeholder="Subject" />
+                    </div>
+                    <div class="col-12 form-group">
+                      <label for="template-contactform-message">メッセージ <small>*</small></label>
+                      <textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30" placeholder="Message"></textarea>
+                    </div>
+                    
+                    <div class="col-12 form-group d-none">
+                      <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                    </div>
+
+                    <div class="col-12 form-group">
+                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                      <div class="g-recaptcha" data-sitekey="6LeDSssZAAAAAJR4Qv6QJAPup6cBjZ4LcNwCdkSA"></div>
+                    </div>
+                  
+                    <div class="col-12 form-group">
+                      <button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">送信(SUBMIT)</button>
+                    </div>
+                    <input type="hidden" name="prefix" value="template-contactform-">
+                  </form>
+                  <div class="form-result"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section><!-- #content end -->
+
+    <!-- Footer
+    ============================================= -->
+    <footer id="footer" class="dark">
+      <!-- Copyrights
+      ============================================= -->
+      <div id="copyrights">
+        <div class="container">
+
+          <div class="row col-mb-30">
+
+            <div class="col-md-6 text-center text-md-left">
+              <br>Copyrights &copy; 2017 All Rights Reserved by UTSURI.
+            </div>
+
+            <div class="col-md-6 text-center text-md-right">
+              <div class="d-flex justify-content-center justify-content-md-end">
+                <a href="#" class="social-icon si-small si-borderless si-facebook">
+                  <i class="icon-facebook"></i>
+                  <i class="icon-facebook"></i>
+                </a>
+
+                <a href="#" class="social-icon si-small si-borderless si-instagram">
+                  <i class="icon-instagram"></i>
+                  <i class="icon-instagram"></i>
+                </a>
+
+              </div>
+              <div class="clear"></div>
+              <i class="icon-headphones"></i> +81-493-53-1755 <span class="middot">&middot;</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div><!-- #copyrights end -->
+    </footer><!-- #footer end -->
+
+  </div><!-- #wrapper end -->
+
+  <!-- Go To Top
+  ============================================= -->
+  <div id="gotoTop" class="icon-angle-up"></div>
+
+  <!-- JavaScripts
+  ============================================= -->
+  <script src="js/jquery.js"></script>
+  <script src="js/plugins.min.js"></script>
+
+  <!-- Footer Scripts
+  ============================================= -->
+  <script src="js/functions.js"></script>
+
+</body>
+</html>

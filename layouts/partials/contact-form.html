@@ -1,0 +1,39 @@
+        <div id="contact-form" class="container">
+          <form name="contact" action="include/form.php" method="post" enctype="multipart/form-data">
+          <div class="row mb-1">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">お名前(必須)</div>
+            <!--<div class="col-md-2">Name</div>-->
+            <div class="col-md-5"><input type="text" id="template-contactform-name" name="contact-form-name" placeholder="Name" class="sm-form-control required valid"></div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row mb-1">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">メールアドレス(必須)</div>
+            <!--<div class="col-md-2">E-mail</div>-->
+            <div class="col-md-5"><input type="email" id="template-contactform-email" name="contact-form-email" placeholder="E-mail" class="required email sm-form-control valid"></div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row mb-1">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">タイトル</div>
+            <div class="col-md-5"><input type="text" id="template-contactform-subject" name="contact-form-subject" placeholder="Subject" class="required sm-form-control valid"></div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">メッセージ</div>
+            <div class="col-md-5"><textarea class="required sm-form-control" id="template-contactform-message" name="contact-form-message" rows="6" placeholder="Message"></textarea></div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-7">
+              <button class="button button-3d m-0" type="submit" name="contact-form-submit" id="template-contactform-submit">送信(SUBMIT)</button>
+            </div>
+          </div>
+          <div class="form-process"></div>
+          <input type="hidden" id="contact-form-botcheck" name="contact-form-botcheck" value="">
+          <input type="hidden" name="prefix" value="contact-form-">
+          </form>
+        </div>
